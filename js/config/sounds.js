@@ -17,18 +17,3 @@ Sound("step_1","sounds/sfx/step_1.ogg");
 Sound("step_2","sounds/sfx/step_2.ogg");
 
 Sound("coffee_throw","sounds/sfx/coffee_throw.ogg");
-
-////////// BEDROOM /////////////
-
-Sound("bedroom_1","sounds/loops/room.ogg");
-Sound("bedroom_2","sounds/loops/city.ogg");
-
-////////// DINNER /////////////
-
-
-Sound("dinner_ticking","sounds/loops/dinner_ticking.ogg");
-Sound("dinner_meowing","sounds/loops/dinner_meowing.ogg");
-
-Sound("dinner_vomit","sounds/sfx/dinner_vomit.ogg");
-Sound("dinner_door","sounds/sfx/dinner_door.ogg");
-Sound("dinner_punch","sounds/sfx/dinner_punch.ogg");
