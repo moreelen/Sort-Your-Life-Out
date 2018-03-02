@@ -200,7 +200,7 @@ function Black5(message){
 		N("Wanna go fold up the toilet paper into points?");
 	}
 
-	Wait(1000);
+	Wait(2000);
 
 	if ($.gosh){
 		p("Would you like me to help you figure out how to quit your job?");
@@ -741,7 +741,7 @@ function Scarves(message){
 	if ($.talking){
 		p("Still not totally sure though.");
 		p("It's like I'm only moving in because I have to");
-		p("and not because I watn to.");
+		p("and not because I want to.");
 		N("Because Alex didn't really ask you yet?");
 		p("Yeah");
 
@@ -1174,7 +1174,7 @@ function Feet(message){
 
 	Wait(500);
 
-	N("Yes!");
+	N("YES!");
 
 	//END JEAN STARTS MAGAZINE, LESLEY ILLUSTRATES.
 }
