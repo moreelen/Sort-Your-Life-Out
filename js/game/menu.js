@@ -96,7 +96,7 @@ function Black2(message){
 		p("Okay...");
 		N("TOILET PAPER HAS A POINT.");
 	}
-	else {
+	else if ($.sheets) {
 		p("So I can use their sheet-tucking powers against my enemies.")
 	}
 	
@@ -278,6 +278,7 @@ function Waste(message){
 			Black2("Me neither.");
 		},
 		"I do.": function(){
+			$.sheets = true;
 			Black2("I do.");
 		}
 	});
@@ -740,7 +741,7 @@ function Scarves(message){
 	if ($.talking){
 		p("Still not totally sure though.");
 		p("It's like I'm only moving in because I have to");
-		P("and not because I watn to.");
+		p("and not because I watn to.");
 		N("Because Alex didn't really ask you yet?");
 		p("Yeah");
 
