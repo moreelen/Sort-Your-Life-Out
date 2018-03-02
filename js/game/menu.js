@@ -665,7 +665,7 @@ function Money(message){
 	p(message);
 	N("Ah.");
 	p("It's getting to the point");
-	P("where I think I can no longer afford living alone.");
+	p("where I think I can no longer afford living alone.");
 	N("Yaaaaaaaay live with me!");
 	p("No. You live in a sink-hole next to a swamp");
 
