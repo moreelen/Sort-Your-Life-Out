@@ -627,7 +627,7 @@ function PetTime(message){
 
 	Wait(2000);
 
-	Black5();
+	Black4();
 }
 
 function Garlic(message){
