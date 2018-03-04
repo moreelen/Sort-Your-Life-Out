@@ -138,7 +138,7 @@ function Black3(message){
 
 	Wait(2000);
 
-	N("I can't believe it's monday again tomorrow.");
+	N("I can't believe it's Monday again tomorrow.");
 	p("Monday happens every week, dude.");
 	N("I wouldn't mind so much about Mondays");
 	N("if my job wasn't so intesely lame");
@@ -625,7 +625,9 @@ function PetTime(message){
 	p("It's not something you can kill by accident.");
 	N("Rude.");
 
-	Black4();
+	Wait(2000);
+
+	Black5();
 }
 
 function Garlic(message){
@@ -925,7 +927,7 @@ function Wonder(message){
 
 function BigStep(message){
 	p(message);
-	N("Is it because she fold her toilet paper into points?");
+	N("Is it because she folds her toilet paper into points?");
 	p("She doesn't do that.");
 	N("Ah, great!");
 	N("So what's the problem?");
@@ -1059,6 +1061,13 @@ function Hard(message){
 	N("But BETTER.");
 
 	//END JEAN STARTS MAGAZINE.
+	Wait(2000);
+	queue(function(){
+		document.getElementById("game").setAttribute("screen","blank");
+	},1000);
+	queue(function(){
+		document.getElementById("game").setAttribute("screen","credits");
+	},0);
 }
 
 function Freelance(message){
@@ -1173,6 +1182,13 @@ function Feet(message){
 	N("YES!");
 
 	//END JEAN STARTS MAGAZINE, LESLEY ILLUSTRATES.
+	Wait(2000);
+	queue(function(){
+		document.getElementById("game").setAttribute("screen","blank");
+	},1000);
+	queue(function(){
+		document.getElementById("game").setAttribute("screen","credits");
+	},0);
 }
 
 function Pet(message){
@@ -1191,6 +1207,13 @@ function Pet(message){
 	N("But BETTER.");
 
 	// END JEAN HAS DOG.
+	Wait(2000);
+	queue(function(){
+		document.getElementById("game").setAttribute("screen","blank");
+	},1000);
+	queue(function(){
+		document.getElementById("game").setAttribute("screen","credits");
+	},0);
 }
 
 function Me(message){
@@ -1208,4 +1231,11 @@ function Me(message){
 	N("But BETTER.");
 
 	// END JEAN HAS CAT.
+	Wait(2000);
+	queue(function(){
+		document.getElementById("game").setAttribute("screen","blank");
+	},1000);
+	queue(function(){
+		document.getElementById("game").setAttribute("screen","credits");
+	},0);
 }
