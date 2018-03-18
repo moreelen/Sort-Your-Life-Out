@@ -1,12 +1,18 @@
-function Start(){
+function Start_Game(){
 
 	$ = {};
+
+	// Just clear dialogue & stuff.
+	queue(ClearScene,0);
 	
 	/////// SET UP SCENE ////////
 
 	Show("background","bed");
 
 	//////////////////////////////
+
+	Wait(2000);
+
 
 	N("Do you ever make coffee");
 	N("but the smell of everything else in your house");
@@ -24,15 +30,6 @@ function Start(){
 		} 
 	});
 
-}
-
-function SipCoffee(message){
-	Show("nicky","coffee_nicky_drink");
-	Show("cup",null);
-	PlaySound("sfx","coffee_sip");
-	p(message);
-	Show("nicky","coffee_nicky_still");
-	Show("cup","cup_steam");
 }
 
 function Black0(message){
@@ -188,7 +185,7 @@ function Black5(message){
 	else if ($.exactly){
 		p(message);
 		p("Please don't expect a birthday dinner out of this.");
-	} else 
+	} else if ($.talkSomething)
 	{
 
 		Wait(1000);
@@ -876,6 +873,7 @@ function Shallow(message){
 			Black5("I don't know.");
 		},
 		"Can we talk about something else?": function(){
+			$.talkSomething = true;
 			Black5("Can we talk about something else?");
 		}
 	});
